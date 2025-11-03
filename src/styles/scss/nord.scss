@@ -2,8 +2,8 @@
 $nord0: #2e3440;
 $nord1: #3b4252;
 $nord2: #434c5e;
-$nord3: #4c566a;
-$nord4: #d8dee9;
+$nord3: #b8c5e0;
+$nord4: #7a8599;
 $nord5: #e7e9f0;
 $nord6: #eceff4;
 $nord7: #8fbcbb;
@@ -50,7 +50,7 @@ Links:
   --card-border: transparent;
   --card-box-shadow: #b8c2d740;
   --divider: #{$nord4};
-  --tag-fg: #{$nord3};
+  --tag-fg: var(--text-fg-faint);
   --tag-bg: transparent;
   --tag-fg-active: #{$nord7};
   --tag-bg-active: transparent;
@@ -78,7 +78,7 @@ Links:
   --card-border: transparent;
   --card-box-shadow: #0f111540;
   --divider: #{$nord3};
-  --tag-fg: #{$nord4};
+  --tag-fg: var(--text-fg-faint);
   --tag-bg: transparent;
   --tag-fg-active: #{$nord7};
   --tag-bg-active: transparent;

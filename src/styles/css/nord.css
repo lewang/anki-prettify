@@ -26,13 +26,13 @@ Links:
   /* Light theme */
   background-color: #ececec;
   --text-fg: #434c5e;
-  --text-fg-faint: #4c566a;
+  --text-fg-faint: #b8c5e0;
   --text-bg-selected: #eceff4;
   --card-bg: #ffffff;
   --card-border: transparent;
   --card-box-shadow: #b8c2d740;
   --divider: #d8dee9;
-  --tag-fg: #4c566a;
+  --tag-fg: var(--text-fg-faint);
   --tag-bg: transparent;
   --tag-fg-active: #8fbcbb;
   --tag-bg-active: transparent;
@@ -54,13 +54,13 @@ Links:
   /* Dark theme */
   background-color: #242933;
   --text-fg: #e7e9f0;
-  --text-fg-faint: #d8dee9;
+  --text-fg-faint: #7a8599;
   --text-bg-selected: #3b4252;
   --card-bg: #2e3440;
   --card-border: transparent;
   --card-box-shadow: #0f111540;
   --divider: #4c566a;
-  --tag-fg: #d8dee9;
+  --tag-fg: var(--text-fg-faint);
   --tag-bg: transparent;
   --tag-fg-active: #8fbcbb;
   --tag-bg-active: transparent;

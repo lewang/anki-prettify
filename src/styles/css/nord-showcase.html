@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nord Theme Showcase</title>
+  <link rel="stylesheet" href="nord.css">
+</head>
+<body class="card">
+  <div class="prettify-flashcard">
+    <!-- Deck breadcrumbs -->
+    <div class="prettify-deck">
+      <span class="prettify-subdeck">Languages</span>&nbsp;/&nbsp;
+      <span class="prettify-subdeck">Japanese</span>&nbsp;/&nbsp;
+      <span class="prettify-subdeck">Vocabulary</span>
+    </div>
+
+    <!-- Front field -->
+    <div class="prettify-field prettify-field--front">
+      <h2>Text Formatting Examples</h2>
+      <p>Regular text in the default color with normal weight.</p>
+      <p><b>Bold text</b> uses the red color (--bold-fg: #bf616a)</p>
+      <p><i>Italic text</i> uses the yellow color (--italic-fg: #ebcb8b)</p>
+      <p><b><i>Bold italic text</i></b> uses the orange color (--bold-italic-fg: #d08770)</p>
+      <p><u>Underlined text</u> uses the green color (--underline-fg: #a3be8c)</p>
+      <p><a href="#">Hyperlink</a> uses the blue color and has hover effects</p>
+      <p>Here is a <span class="cloze">[cloze deletion]</span> in cyan color</p>
+    </div>
+
+    <!-- Divider -->
+    <hr class="prettify-divider" />
+
+    <!-- Back field with faint text -->
+    <div class="prettify-field prettify-field--back">
+      <p>This is back field text with faint color (--text-fg-faint)</p>
+      <p>It uses a smaller font size (--font-size-small: 14px)</p>
+    </div>
+
+    <!-- Another divider (answer style) -->
+    <hr class="prettify-divider prettify-divider--answer" id="answer" />
+
+    <!-- Lists -->
+    <div class="prettify-field">
+      <h3>Lists</h3>
+      <ul>
+        <li>Unordered list item 1</li>
+        <li>Unordered list item 2</li>
+        <li>Unordered list item 3</li>
+      </ul>
+      <ol>
+        <li>Ordered list item 1</li>
+        <li>Ordered list item 2</li>
+        <li>Ordered list item 3</li>
+      </ol>
+    </div>
+
+    <!-- Table -->
+    <div class="prettify-field">
+      <h3>Table Example</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+          </tr>
+          <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+          </tr>
+          <tr>
+            <td>Row 3, Cell 1</td>
+            <td>Row 3, Cell 2</td>
+            <td>Row 3, Cell 3</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Image placeholder -->
+    <div class="prettify-field">
+      <h3>Image Example</h3>
+      <p>Images would appear here with hover zoom and click-to-fullscreen:</p>
+      <img src="https://picsum.photos/400/300" alt="Example image with hover zoom and click fullscreen" />
+    </div>
+
+    <!-- Code block -->
+    <div class="prettify-field">
+      <h3>Code Example</h3>
+      <pre>function example() {
+  return "This is preformatted text";
+}</pre>
+    </div>
+
+    <!-- Mixed formatting -->
+    <div class="prettify-field">
+      <h3>Combined Styles</h3>
+      <p>
+        This paragraph contains <b>bold</b>, <i>italic</i>,
+        <u>underlined</u>, and <a href="#">linked</a> text all together.
+        You can also have <b><i>bold italic</i></b> combinations.
+      </p>
+      <p>
+        Text selection has custom background color defined by --text-bg-selected.
+        Try selecting this text to see the effect!
+      </p>
+    </div>
+
+    <!-- Tags -->
+    <div class="prettify-tags">
+      <span class="prettify-tag">vocabulary</span>
+      <span class="prettify-tag">beginner</span>
+      <span class="prettify-tag">chapter-1</span>
+      <span class="prettify-tag">important</span>
+      <span class="prettify-tag">review-daily</span>
+    </div>
+  </div>
+
+  <br><br>
+
+  <!-- Dark mode example -->
+  <div style="text-align: center; margin: 2em 0;">
+    <button onclick="document.body.classList.toggle('night_mode')"
+            style="padding: 0.5em 1em; font-size: 16px; cursor: pointer; border-radius: 0.25em;">
+      Toggle Dark Mode
+    </button>
+  </div>
+
+  <script>
+    // Tag hover effects are handled by CSS
+    // Deck breadcrumbs splitting script (from basic-back.html)
+    var deckEl = document.querySelector(".prettify-deck");
+    if (deckEl) {
+      var subDecks = deckEl.innerHTML.split("::").filter(Boolean);
+      if (subDecks.length > 1) {
+        html = [];
+        subDecks.forEach((subDeck) => {
+          html.push("<span class='prettify-subdeck'>" + subDeck + "</span>");
+        });
+        deckEl.innerHTML = html.join("&nbsp;/&nbsp;");
+      }
+    }
+  </script>
+</body>
+</html>

@@ -131,14 +131,24 @@ Links:
   text-overflow: ellipsis;
   overflow: hidden; }
 
-/* -------------------------------------------------- TAGS */
-.prettify-tags {
+/* -------------------------------------------------- BOTTOM STATUS */
+.prettify-bottom-status {
   margin: 2em;
   display: flex;
-  flex-flow: row wrap;
-  font-size: var(--font-size-small); }
-  .mobile .prettify-tags {
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1em;
+  flex-wrap: nowrap; }
+  .mobile .prettify-bottom-status {
     margin: 1em; }
+
+/* -------------------------------------------------- TAGS */
+.prettify-tags {
+  display: flex;
+  flex-flow: row wrap;
+  font-size: var(--font-size-small);
+  flex: 1;
+  min-width: 0; }
 
 .prettify-tag {
   all: initial;
@@ -159,6 +169,16 @@ Links:
     border: 1px solid var(--tag-border-active);
     color: var(--tag-fg-active);
     cursor: pointer; }
+
+/* -------------------------------------------------- CARD INFO */
+.prettify-card-info {
+  display: flex;
+  flex-flow: row wrap;
+  font-size: var(--font-size-small);
+  color: var(--text-fg-faint);
+  align-items: center;
+  flex-shrink: 0;
+  white-space: nowrap; }
 
 /* -------------------------------------------------- DIVIDER */
 .prettify-divider {

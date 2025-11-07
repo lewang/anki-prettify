@@ -96,6 +96,22 @@ Links:
   --underline-fg: #{$nord14};
 }
 
+/* -------------------------------------------------- Le Customization */
+
+// - {{info-Type:}} - 0=suspended, 1=learning, 2=normal, 3=relearning
+.prettify-flashcard .hint-container {
+  button {
+    display: none;
+  }
+  .prettify-field {
+    display: block;
+  }
+
+  &.card-type-
+
+}
+
+
 /* -------------------------------------------------- BACKGROUND */
 .card {
   cursor: default;

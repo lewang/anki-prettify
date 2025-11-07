@@ -1,6 +1,57 @@
-{{Back}}```
-{{FrontSide}}
+<!-- Prettify by @pranavdeshai: Basic reverse Card 2 (front)
 
-<hr id=answer>
+Version: 0.1.3
+Readme: https://github.com/pranavdeshai/anki-prettify
+Links:
+- Reddit: https://www.reddit.com/user/Various_Breadfruit48
+- GitHub: https://github.com/pranavdeshai
+- Buy Me a Coffee: https://www.buymeacoffee.com/pranavdeshai
+- Ko-fi: https://ko-fi.com/pranavdeshai
 
-{{Front}}
+-->
+<div class="prettify-flashcard">
+  <div class="prettify-deck">{{Deck}}</div>
+  <div class="prettify-field prettify-field--front">{{edit:Back}}</div>
+
+  <!-- Bottom status container -->
+  <div class="prettify-bottom-status">
+    <!-- Tags -->
+    {{#Tags}}
+    <div class="prettify-tags">{{clickable:Tags}}</div>
+    {{/Tags}}
+    <!-- Card info -->
+    <div class="prettify-card-info">
+      <span>r={{info-Reviews:}} l={{info-Lapses:}}</span>
+    </div>
+  </div>
+</div>
+```
+<!-- Prettify by @pranavdeshai: Basic reverse Card 2 (back)
+
+Version: 0.1.3
+Readme: https://github.com/pranavdeshai/anki-prettify
+Links:
+- Reddit: https://www.reddit.com/user/Various_Breadfruit48
+- GitHub: https://github.com/pranavdeshai
+- Buy Me a Coffee: https://www.buymeacoffee.com/pranavdeshai
+- Ko-fi: https://ko-fi.com/pranavdeshai
+
+-->
+<div class="prettify-flashcard">
+  <div class="prettify-deck">{{Deck}}</div>
+  <div class="prettify-field prettify-field--front">{{edit:Back}}</div>
+  <hr class="prettify-divider prettify-divider--answer" id="answer" />
+  <div class="prettify-field prettify-field--back">{{edit:Front}}</div>
+
+  <!-- Bottom status container -->
+  <div class="prettify-bottom-status">
+    <!-- Tags -->
+    {{#Tags}}
+    <div class="prettify-tags">{{clickable:Tags}}</div>
+    {{/Tags}}
+    <!-- Card info -->
+    <div class="prettify-card-info">
+      <span>r={{info-Reviews:}} l={{info-Lapses:}}</span>
+    </div>
+  </div>
+</div>

@@ -79,23 +79,19 @@ Links:
 }
 
 /* -------------------------------------------------- Le Customization */
-.prettify-flashcard .hint-container .hint-toggle {
+.prettify-flashcard .hint-container .hint-toggle, .prettify-flashcard .hint-container.show-hint .hint-toggle {
   display: none;
 }
-.prettify-flashcard .hint-container .prettify-field {
+.prettify-flashcard .hint-container .prettify-field, .prettify-flashcard .hint-container.show-hint .prettify-field {
   display: block;
 }
-.prettify-flashcard .hint-container.card-type-2 .hint-toggle {
+
+.prettify-flashcard.card-type-2 .hint-container:not(.show-hint) .hint-toggle {
   display: block;
+  margin: 0 auto;
 }
-.prettify-flashcard .hint-container.card-type-2 .prettify-field {
+.prettify-flashcard.card-type-2 .hint-container:not(.show-hint) .prettify-field {
   display: none;
-}
-.prettify-flashcard .hint-container.card-type-2.show-hint .hint-toggle {
-  display: none;
-}
-.prettify-flashcard .hint-container.card-type-2.show-hint .prettify-field {
-  display: block;
 }
 
 /* -------------------------------------------------- BACKGROUND */

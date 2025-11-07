@@ -1,6 +1,11 @@
-<div class="prettify-flashcard">
+<div class="prettify-flashcard card-type-{{info-Type:}}">
   <div class="prettify-deck">{{Deck}}</div>
-  <div class="prettify-field prettify-field--front">{{edit:Image}}</div>
+  {{#Image}}
+    <div class="hint-container">
+      <button class="hint-toggle">show hint</button>
+      <div class="prettify-field prettify-field--front">{{edit:Image}}</div>
+    </div>
+  {{/Image}}
   <div class="prettify-field prettify-front">
     <div class="prettify-field--back">
       <label>Definition</label>
@@ -10,13 +15,18 @@
     </p>
   </div>
 
-  <div class="prettify-field prettify-field--front">
-    <div class="prettify-field--back">
-      <label>Term</label>
+  <div class="hint-container">
+    <button class="hint-toggle">show hint</button>
+    <div class="prettify-field prettify-field--front">
+      <div class="prettify-field--back">
+        <label>Term</label>
+      </div>
+      <div id="term" class="prettify-field prettify-field--front">
+        {{Term}}
+      </div>
     </div>
-    <h2 id="term">{{Term}}</h2>
-    {{type:Term}}
   </div>
+  {{type:Term}}
 
   <!-- Bottom status container -->
   <div class="prettify-bottom-status">
@@ -41,9 +51,11 @@ document.getElementById("term").innerHTML += "-";
 document.getElementById("term").innerHTML += " " + dashes[dashes.length - 1];
 </script>
 ```
-<div class="prettify-flashcard">
+<div class="prettify-flashcard card-type-{{info-Type:}}">
   <div class="prettify-deck">{{Deck}}</div>
-  <div class="prettify-field prettify-field--front">{{edit:Image}}</div>
+  {{#Image}}
+    <div class="prettify-field prettify-field--front">{{edit:Image}}</div>
+  {{/Image}}
   <div class="prettify-field prettify-front">
     <div class="prettify-field--back">
       <label>Definition</label>
@@ -57,7 +69,6 @@ document.getElementById("term").innerHTML += " " + dashes[dashes.length - 1];
     <div class="prettify-field--back">
       <label>Term</label>
     </div>
-    <h2 id="term">{{Term}}</h2>
     {{type:Term}}
   </div>
 

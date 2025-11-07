@@ -100,30 +100,24 @@ Links:
 
 // - {{info-Type:}} - 0=suspended, 1=learning, 2=normal, 3=relearning
 .prettify-flashcard .hint-container {
-  .hint-toggle {
-    display: none;
-  }
-  .prettify-field {
-    display: block;
-  }
-
-  &.card-type-2 {
+  &, &.show-hint {
     .hint-toggle {
-      display: block;
-    }
-    .prettify-field {
       display: none;
     }
-    &.show-hint {
-      .hint-toggle {
-        display: none;
-      }
-      .prettify-field {
-        display: block;
-      }
+    .prettify-field {
+      display: block;
     }
   }
+}
 
+.prettify-flashcard.card-type-2 .hint-container:not(.show-hint) {
+  .hint-toggle {
+    display: block;
+    margin: 0 auto;
+  }
+  .prettify-field {
+    display: none;
+  }
 }
 
 

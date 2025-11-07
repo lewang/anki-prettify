@@ -1,11 +1,13 @@
 <div class="prettify-flashcard card-type-{{info-Type:}}">
 
-
   <div class="prettify-deck">{{Deck}}</div>
-  <div class="hint-container">
-    <a class="hint-toggle">show hint</a>
-    <div class="prettify-field prettify-field--front">{{edit:Image}}</div>
-  </div>
+  {{#Image}}
+    <div class="hint-container">
+      <button class="hint-toggle">show hint</button>
+      <div class="prettify-field prettify-field--front">{{edit:Image}}</div>
+    </div>
+  {{/Image}}
+
   <div class="prettify-field prettify-field--front">
     <h2>{{Term}}</h2>
     {{Audio}}
@@ -22,11 +24,14 @@
       <span>r={{info-Reviews:}} l={{info-Lapses:}}</span>
     </div>
   </div>
+
 </div>
 ```
-<div class="prettify-flashcard">
+<div class="prettify-flashcard card-type-{{info-Type:}}">
   <div class="prettify-deck">{{Deck}}</div>
+  {{#Image}}
   <div class="prettify-field prettify-field--front">{{edit:Image}}</div>
+  {{/Image}}
   <div class="prettify-field prettify-field--front">
     <h2>{{Term}}</h2>
     {{Audio}}

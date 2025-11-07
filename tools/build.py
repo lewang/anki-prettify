@@ -78,7 +78,7 @@ if new_ver != last_rel_ver:
 
 # Compile SCSS to CSS
 os.system(
-    f"sass --no-source-map {str(root / 'src' / 'styles' / 'scss')}:{str(root / 'src' / 'styles' / 'css')}"
+    f"sass --style=expanded --no-source-map {str(root / 'src' / 'styles' / 'scss')}:{str(root / 'src' / 'styles' / 'css')}"
 )
 print("Compiled SCSS to CSS")
 

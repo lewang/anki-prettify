@@ -36,3 +36,12 @@
   });
   deckEl.innerHTML = html.join("&nbsp;/&nbsp;");
 </script>
+
+<script>
+  // Hint toggle functionality
+  document.querySelectorAll('.hint-toggle').forEach(function(toggle) {
+    toggle.addEventListener('click', function() {
+      this.closest('.hint-container').classList.add('show-hint');
+    });
+  });
+</script>

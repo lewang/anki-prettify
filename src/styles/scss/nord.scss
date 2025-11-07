@@ -100,14 +100,29 @@ Links:
 
 // - {{info-Type:}} - 0=suspended, 1=learning, 2=normal, 3=relearning
 .prettify-flashcard .hint-container {
-  button {
+  .hint-toggle {
     display: none;
   }
   .prettify-field {
     display: block;
   }
 
-  &.card-type-
+  &.card-type-2 {
+    .hint-toggle {
+      display: block;
+    }
+    .prettify-field {
+      display: none;
+    }
+    &.show-hint {
+      .hint-toggle {
+        display: none;
+      }
+      .prettify-field {
+        display: block;
+      }
+    }
+  }
 
 }
 

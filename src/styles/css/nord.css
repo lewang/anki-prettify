@@ -78,6 +78,26 @@ Links:
   --underline-fg: #a3be8c;
 }
 
+/* -------------------------------------------------- Le Customization */
+.prettify-flashcard .hint-container .hint-toggle {
+  display: none;
+}
+.prettify-flashcard .hint-container .prettify-field {
+  display: block;
+}
+.prettify-flashcard .hint-container.card-type-2 .hint-toggle {
+  display: block;
+}
+.prettify-flashcard .hint-container.card-type-2 .prettify-field {
+  display: none;
+}
+.prettify-flashcard .hint-container.card-type-2.show-hint .hint-toggle {
+  display: none;
+}
+.prettify-flashcard .hint-container.card-type-2.show-hint .prettify-field {
+  display: block;
+}
+
 /* -------------------------------------------------- BACKGROUND */
 .card {
   cursor: default;
@@ -361,5 +381,3 @@ pre {
   font-weight: bold;
 }
 /* -------------------------------------------------- END OF THEME */
-
-/*# sourceMappingURL=nord.css.map */

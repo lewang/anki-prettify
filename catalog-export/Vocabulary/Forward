@@ -3,7 +3,7 @@
 
   <div class="prettify-deck">{{Deck}}</div>
   <div class="hint-container">
-    <a>show hint</a>
+    <a class="hint-toggle">show hint</a>
     <div class="prettify-field prettify-field--front">{{edit:Image}}</div>
   </div>
   <div class="prettify-field prettify-field--front">

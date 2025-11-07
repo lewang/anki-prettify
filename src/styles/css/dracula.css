@@ -260,14 +260,21 @@ b,
 strong {
   color: var(--bold-fg);
 }
+b > i,
+b > em,
+strong > i,
+strong > em {
+  color: var(--bold-italic-fg);
+}
 
 i,
 em {
   color: var(--italic-fg);
 }
-
-:is(b, strong) > :is(i, em),
-:is(i, em) > :is(b, strong) {
+i > b,
+i > strong,
+em > b,
+em > strong {
   color: var(--bold-italic-fg);
 }
 
@@ -305,3 +312,5 @@ pre {
   font-weight: bold;
 }
 /* -------------------------------------------------- END OF THEME */
+
+/*# sourceMappingURL=dracula.css.map */

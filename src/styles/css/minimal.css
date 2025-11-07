@@ -275,16 +275,25 @@ a:hover, a:active {
 }
 
 /* -------------------------------------------------- FORMATTING */
-b, strong {
+b,
+strong {
   color: var(--bold-fg);
 }
-
-i, em {
-  color: var(--italic-fg);
+b > i,
+b > em,
+strong > i,
+strong > em {
+  color: var(--bold-italic-fg);
 }
 
-:is(b, strong) > :is(i, em),
-:is(i, em) > :is(b, strong) {
+i,
+em {
+  color: var(--italic-fg);
+}
+i > b,
+i > strong,
+em > b,
+em > strong {
   color: var(--bold-italic-fg);
 }
 
@@ -322,3 +331,5 @@ pre {
   font-weight: bold;
 }
 /* -------------------------------------------------- END OF THEME */
+
+/*# sourceMappingURL=minimal.css.map */

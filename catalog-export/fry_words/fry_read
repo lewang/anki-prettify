@@ -1,0 +1,53 @@
+<div class="prettify-flashcard card-type-{{info-Type:}}">
+  <div class="prettify-deck">{{Deck}}</div>
+
+  <div class="prettify-field prettify-field--front">
+    <h2>{{Spelled}}</h2>
+  </div>
+
+  <!-- Bottom status container -->
+  <div class="prettify-bottom-status">
+    <!-- Tags -->
+    {{#Tags}}
+    <div class="prettify-tags">{{clickable:Tags}}</div>
+    {{/Tags}}
+    <!-- Card info -->
+    <div class="prettify-card-info">
+      <span>r={{info-Reviews:}} l={{info-Lapses:}}</span>
+    </div>
+  </div>
+</div>
+```
+<div class="prettify-flashcard card-type-{{info-Type:}}">
+  <div class="prettify-deck">{{Deck}}</div>
+
+  <div class="prettify-field prettify-field--front">
+    <h2>{{Spelled}}</h2>
+    {{Audio}}
+  </div>
+
+  <hr class="prettify-divider prettify-divider--answer" id="answer" />
+
+  {{#Hint}}
+  <div class="prettify-field prettify-field--front">
+    <div class="prettify-field--back">
+      <label>Hint</label>
+    </div>
+    <p>
+      {{Hint}}
+    </p>
+  </div>
+  {{/Hint}}
+
+  <!-- Bottom status container -->
+  <div class="prettify-bottom-status">
+    <!-- Tags -->
+    {{#Tags}}
+    <div class="prettify-tags">{{clickable:Tags}}</div>
+    {{/Tags}}
+    <!-- Card info -->
+    <div class="prettify-card-info">
+      <span>r={{info-Reviews:}} l={{info-Lapses:}}</span>
+    </div>
+  </div>
+</div>

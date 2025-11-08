@@ -1,0 +1,68 @@
+<div class="prettify-flashcard card-type-{{info-Type:}}">
+  <div class="prettify-deck">{{Deck}}</div>
+
+  <div class="prettify-field prettify-field--front">
+    {{Audio}}
+  </div>
+
+  <div class="prettify-field prettify-field--front">
+    {{type:Spelled}}
+  </div>
+
+  {{#Hint}}
+  <div class="hint-container">
+    <button class="hint-toggle">show hint</button>
+    <div class="prettify-field prettify-field--front">
+      <div class="prettify-field--back">
+        <label>Hint</label>
+      </div>
+      <p>
+        {{Hint}}
+      </p>
+    </div>
+  </div>
+  {{/Hint}}
+
+  <!-- Bottom status container -->
+  <div class="prettify-bottom-status">
+    <!-- Tags -->
+    {{#Tags}}
+    <div class="prettify-tags">{{clickable:Tags}}</div>
+    {{/Tags}}
+    <!-- Card info -->
+    <div class="prettify-card-info">
+      <span>r={{info-Reviews:}} l={{info-Lapses:}}</span>
+    </div>
+  </div>
+</div>
+```
+<div class="prettify-flashcard card-type-{{info-Type:}}">
+  <div class="prettify-deck">{{Deck}}</div>
+
+  <div class="prettify-field prettify-field--front">
+    {{type:Spelled}}
+  </div>
+
+  {{#Hint}}
+  <div class="prettify-field prettify-field--front">
+    <div class="prettify-field--back">
+      <label>Hint</label>
+    </div>
+    <p>
+      {{Hint}}
+    </p>
+  </div>
+  {{/Hint}}
+
+  <!-- Bottom status container -->
+  <div class="prettify-bottom-status">
+    <!-- Tags -->
+    {{#Tags}}
+    <div class="prettify-tags">{{clickable:Tags}}</div>
+    {{/Tags}}
+    <!-- Card info -->
+    <div class="prettify-card-info">
+      <span>r={{info-Reviews:}} l={{info-Lapses:}}</span>
+    </div>
+  </div>
+</div>

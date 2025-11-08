@@ -34,7 +34,7 @@
   <hr class="prettify-divider prettify-divider--answer" id="answer" />
 
   <div class="prettify-field prettify-field--front">
-    <h2>{{factor1}} × <b>{{factor2}}</b> = {{product}}</h2>
+    <h2><b>{{factor1}}</b> × {{factor2}} = {{product}}</h2>
   </div>
 
   <!-- Bottom status container -->

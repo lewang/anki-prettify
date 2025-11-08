@@ -1,8 +1,8 @@
 <div class="prettify-flashcard card-type-{{info-Type:}}">
   <div class="prettify-deck">{{Deck}}</div>
 
-  <div class="prettify-field prettify-field--front">
-    <div class="prettify-field--back">Listen ...</div>
+  <div class="prettify-field--back">Listen ...</div>
+  <div style='display:none;'>
     {{audio_multiply_forward_str}}
   </div>
 
@@ -32,8 +32,8 @@ debugger;
 <div class="prettify-flashcard card-type-{{info-Type:}}">
   <div class="prettify-deck">{{Deck}}</div>
 
-  <div class="prettify-field prettify-field--front">
-    <div class="prettify-field--back">Listen ...</div>
+  <div class="prettify-field--back">Listen ...</div>
+  <div style='display:none;'>
     {{audio_multiply_forward_str}}
   </div>
 

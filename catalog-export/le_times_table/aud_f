@@ -40,7 +40,7 @@ debugger;
   <hr class="prettify-divider prettify-divider--answer" id="answer" />
 
   <div class="prettify-field prettify-field--front">
-    <h2>{{factor1}} × {{factor2}} = {{product}}</h2>
+    <h2>{{factor1}} × {{factor2}} = <b>{{product}}</b></h2>
   </div>
 
   <!-- Bottom status container -->

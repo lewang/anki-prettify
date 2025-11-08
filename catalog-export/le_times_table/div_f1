@@ -2,10 +2,7 @@
   <div class="prettify-deck">{{Deck}}</div>
 
   <div class="prettify-field prettify-field--front">
-    <div class="prettify-field--back">Read</div>
-    <p>
-      {{Spelled}}
-    </p>
+    <h2>{{product}} ÷ {{factor1}} = [...]</h2>
   </div>
 
   <!-- Bottom status container -->
@@ -25,22 +22,14 @@
   <div class="prettify-deck">{{Deck}}</div>
 
   <div class="prettify-field prettify-field--front">
-    <div class="prettify-field--back">Read</div>
-    <p>
-      {{Spelled}} {{Audio}}
-    </p>
+    <h2>{{product}} ÷ {{factor1}} = [...]</h2>
   </div>
 
-  {{#Hint}}
-  <div class="prettify-field prettify-field--front">
-    <div class="prettify-field--back">
-      <label>Hint</label>
-    </div>
-    <p>
-      {{Hint}}
-    </p>
+  <hr class="prettify-divider prettify-divider--answer" id="answer" />
+
+  <div class="prettify-field prettify-field--back">
+    <h2>{{product}} ÷ {{factor1}} = {{factor2}}</h2>
   </div>
-  {{/Hint}}
 
   <!-- Bottom status container -->
   <div class="prettify-bottom-status">

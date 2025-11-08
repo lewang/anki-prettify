@@ -2,10 +2,10 @@
   <div class="prettify-deck">{{Deck}}</div>
 
   <div class="prettify-field prettify-field--front">
-    <div class="prettify-field--back">Read</div>
-    <p>
-      {{Spelled}}
-    </p>
+    <div class="prettify-field--back">Listen ...</div>
+    {{#backward_ok}}
+      {{audio_multiply_backward_str}}
+    {{/backward_ok}}
   </div>
 
   <!-- Bottom status container -->
@@ -25,22 +25,17 @@
   <div class="prettify-deck">{{Deck}}</div>
 
   <div class="prettify-field prettify-field--front">
-    <div class="prettify-field--back">Read</div>
-    <p>
-      {{Spelled}} {{Audio}}
-    </p>
+    <div class="prettify-field--back">Listen ...</div>
+    {{#backward_ok}}
+      {{audio_multiply_backward_str}}
+    {{/backward_ok}}
   </div>
 
-  {{#Hint}}
-  <div class="prettify-field prettify-field--front">
-    <div class="prettify-field--back">
-      <label>Hint</label>
-    </div>
-    <p>
-      {{Hint}}
-    </p>
+  <hr class="prettify-divider prettify-divider--answer" id="answer" />
+
+  <div class="prettify-field prettify-field--back">
+    <h2>{{factor2}} × {{factor1}} = {{product}}</h2>
   </div>
-  {{/Hint}}
 
   <!-- Bottom status container -->
   <div class="prettify-bottom-status">
